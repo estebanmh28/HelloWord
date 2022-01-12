@@ -7,8 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
-
+  #vmImage: ubuntu-latest
+  name: Default
+  demands: 
+  - agent.name -equals Estebanmh28
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
